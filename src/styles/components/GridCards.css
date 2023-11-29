@@ -1,0 +1,34 @@
+/* src/styles/CityGrid.css */
+
+@import '../variables.css';
+
+.grid-cards {
+    display: grid;
+    gap: 16px;
+}
+
+@media (min-width: 375px) {
+    .grid-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-cards > :nth-child(1){
+        grid-column: span 2;
+    }
+    .grid-cards > :nth-child(6){
+        grid-column: span 2;
+    }
+
+}
