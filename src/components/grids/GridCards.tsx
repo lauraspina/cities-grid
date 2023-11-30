@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import "../../styles/components/GridCards.css";
+import "../../styles/components/GridCards.scss";
 
 interface GridCardsProps {
   children: ReactNode;

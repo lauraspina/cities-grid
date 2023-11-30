@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/ButtonLink.css";
+import "../styles/components/ButtonLink.scss";
 
 interface ButtonLinkProps {
   href: string;

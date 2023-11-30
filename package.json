@@ -61,6 +61,7 @@
     "@storybook/react-webpack5": "^7.6.2",
     "@storybook/test": "^7.6.2",
     "concurrently": "^8.2.2",
+    "node-sass": "^7.0.3",
     "prop-types": "^15.8.1",
     "storybook": "^7.6.2",
     "webpack": "^5.89.0"

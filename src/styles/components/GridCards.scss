@@ -1,6 +1,6 @@
 /* src/styles/CityGrid.css */
 
-@import '../variables.css';
+@import "../variables";
 
 .grid-cards {
     display: grid;
@@ -8,13 +8,13 @@
     margin-block: 1rem;
 }
 
-@media (min-width: 375px) {
+@media (min-width: $breakpoint-sm) {
     .grid-cards {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
     .grid-cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -26,7 +26,7 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-lg) {
     .grid-cards {
         grid-template-columns: repeat(4, 1fr);
     }

@@ -1,4 +1,5 @@
-/* src/styles/components/CardCity.css */
+
+@import '../variables';
 
 .container {
     position: relative;
@@ -8,21 +9,20 @@
     margin-block: 4rem;
 }
 
-@media (min-width: 378px) {
+@media (min-width: $breakpoint-sm) {
     .container {
         max-width: 650px;
-
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
     .container {
         max-width: 980px;
         padding-inline: 2rem;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-lg) {
     .container {
         max-width: 1440px;
     }

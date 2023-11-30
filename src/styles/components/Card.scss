@@ -1,5 +1,7 @@
 /* src/styles/components/CardCity.css */
 
+@import "../variables";
+
 .card {
     position: relative;
     width: 100%;
@@ -81,7 +83,7 @@
     max-width: 70%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
     .card-subtitle {
         max-width: 800px;
     }

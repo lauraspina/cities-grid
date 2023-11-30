@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "../styles/components/GridCards.css";
+import "../styles/components/GridCards.scss";
 import { GridCards } from "../components/grids/GridCards";
 import { Card } from "../components/cards/Card";
 import { Container } from "../components/Container";
