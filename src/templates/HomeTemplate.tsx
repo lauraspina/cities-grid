@@ -38,6 +38,7 @@ export const HomeTemplate: React.FC = () => {
       .catch((error) => {
         console.error("Error fetching data:", error);
         setLoading(false);
+        return <p>Error during loading, I'm very sorry</p>;
       });
   }, []);
 
