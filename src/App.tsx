@@ -1,12 +1,12 @@
 import React from "react";
 
 import "./styles/global.css";
-import { ListCards } from "./components/ListCards";
+import { HomeTemplate } from "./templates/HomeTemplate";
 
 function App() {
   return (
     <div className="App">
-      <ListCards />
+      <HomeTemplate />
     </div>
   );
 }

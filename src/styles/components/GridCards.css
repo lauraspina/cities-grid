@@ -4,7 +4,8 @@
 
 .grid-cards {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
+    margin-block: 1rem;
 }
 
 @media (min-width: 375px) {
@@ -17,7 +18,13 @@
     .grid-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid-cards > :nth-child(1){
+        grid-column: span 2;
+        height: 700px;
+    }
 }
+
 
 @media (min-width: 1024px) {
     .grid-cards {
@@ -25,9 +32,13 @@
     }
 
     .grid-cards > :nth-child(1){
+        grid-column: span 4;
+    }
+
+    .grid-cards > :nth-child(2){
         grid-column: span 2;
     }
-    .grid-cards > :nth-child(6){
+    .grid-cards > :nth-child(7){
         grid-column: span 2;
     }
 
