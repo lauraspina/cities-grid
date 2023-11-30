@@ -24,7 +24,7 @@ export const Card: React.FC<CardProps> = ({
   url,
 }) => {
   return (
-    <section className="card">
+    <section className="card" role="article">
       {image && !video && <img src={image} alt={title} />}
       {video && (
         <video
@@ -38,7 +38,7 @@ export const Card: React.FC<CardProps> = ({
           style={{ objectFit: "cover" }}
         />
       )}
-      <div className="card-overlay">
+      <div className="card-overlay" role="presentation">
         <section className="card-section-visible">
           {pretitle && <h3 className="card-pretitle">{pretitle}</h3>}
           {title && (
