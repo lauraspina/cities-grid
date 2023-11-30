@@ -21,7 +21,7 @@ export const HomeTemplate: React.FC = () => {
   const valtechCard = {
     pretitle: "front-end",
     title: "valtech_",
-    video: "/assets/abstract.mp4",
+    video: "/cities-grid/assets/abstract.mp4",
     url: "https://www.valtech.com",
     subtitle:
       "We exist to unlock a better way to experience the world. As an experience innovation company, we empower people and businesses to thrive in a rapidly changing and connected world. We believe exceptional things happen at the intersection between different crafts, cultures, and perspectives and that the most exciting breakthroughs come from combining uncommon connections.",
