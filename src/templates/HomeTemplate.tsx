@@ -4,6 +4,7 @@ import "../styles/components/GridCards.scss";
 import { GridCards } from "../components/grids/GridCards";
 import { Card } from "../components/cards/Card";
 import { Container } from "../components/Container";
+import { Loading } from "../components/Loading";
 
 interface City {
   id: number;
@@ -41,7 +42,21 @@ export const HomeTemplate: React.FC = () => {
   }, []);
 
   if (loading) {
-    return <Container>Loading...</Container>;
+    return (
+      <Container>
+        <GridCards>
+          <Card
+            isTitleXL={true}
+            pretitle={valtechCard.pretitle}
+            title={valtechCard.title}
+            video={valtechCard.video}
+            url={valtechCard.url}
+            subtitle={valtechCard.subtitle}
+          />
+        </GridCards>
+        <Loading />
+      </Container>
+    );
   }
 
   return (
