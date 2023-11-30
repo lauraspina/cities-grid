@@ -48,7 +48,14 @@ export const Card: React.FC<CardProps> = ({
         </section>
         <section className="card-section-hidden">
           {intro && <p className="card-intro">{intro}</p>}
-          {url && <ButtonLink external cta="Learn more" href={url} />}
+          {url && (
+            <ButtonLink
+              title={`Learn more about ${title}`}
+              external
+              cta="Learn more"
+              href={url}
+            />
+          )}
         </section>
       </div>
     </section>
