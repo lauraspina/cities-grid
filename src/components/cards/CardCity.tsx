@@ -15,12 +15,20 @@ const CardCity: React.FC<{ city: City }> = ({ city }) => {
     <section className="card-city">
       <img src={city.image} alt={city.city} />
       <div className="card-overlay">
-        <h3 className="card-title">{city.country}</h3>
-        <h3 className="card-subtitle">{city.city}</h3>
-        <div className="card-intro">{city.intro}</div>
-        <a href={city.url} className="learn-more-btn">
-          Learn more
-        </a>
+        <section className="card-section-visible">
+          <h3 className="card-title">{city.country}</h3>
+          <h2 className="card-subtitle">{city.city}</h2>
+        </section>
+        <section className="card-section-hidden">
+          <p className="card-intro">{city.intro}</p>
+          <a
+            href={city.url}
+            aria-label={`explore more about ${city.city}`}
+            className="primary-btn"
+          >
+            Explore more
+          </a>
+        </section>
       </div>
     </section>
   );
