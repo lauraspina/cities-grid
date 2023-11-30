@@ -7,7 +7,7 @@
     width: 100%;
     height: 500px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0.75rem;
 }
 
 .card img {
@@ -27,12 +27,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 1.2rem;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     color: #fff;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: background-color  0.3s ease-in-out;
 }
 
 .card-pretitle {
@@ -45,7 +44,10 @@
 }
 
 .card-title.xl {
-    font-size: 4rem;
+    font-size: 3rem;
+    @media (min-width: $breakpoint-md) {
+        font-size: 4rem;
+    }
 }
 
 .card-subtitle {
@@ -112,11 +114,11 @@
 
     .card:hover .card-section-hidden {
         opacity: 1;
-        transform: translateY(-20px);
+        transform: translateY(-2rem);
     }
 
     .card:hover .card-section-visible {
-        transform: translateY(-40px);
+        transform: translateY(-3rem);
     }
 
     .card:hover .card-section-hidden {
